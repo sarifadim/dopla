@@ -1,0 +1,7 @@
+sudo apt update
+sudo apt install dante-server
+mv /etc/danted.conf der
+cd /etc/
+wget https://raw.githubusercontent.com/sarifadim/dopla/main/danted.conf
+service danted start
+useradd -m -p 1234abcd user
