@@ -8,7 +8,7 @@ cd /home/
 sleep 3
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
-./ngrok authtoken 1wkgCSYw391hKMgYkB47bZ95cGW_6kEp8sdH54pp8cRxaQL2b
+./ngrok authtoken 1x60nODyuCMqPVurGtFo8oUDWSq_2Cfzrj2wgj4b7VWxDpjqd
 sleep 3
 nohup ./ngrok tcp 443 &>/dev/null &
 sleep 3
