@@ -14,6 +14,8 @@ unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 sleep 3
 nohup ./ngrok tcp 443 --region ap &>/dev/null &
 sleep 3
+echo ==== your ip public =========
+curl ifconfig.me
 echo ==== yourlink =========
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
 echo ====yourlink=========
